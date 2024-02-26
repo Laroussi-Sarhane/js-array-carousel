@@ -65,6 +65,9 @@ position: relative;
   cursor: pointer;
   
 }
+.hide{
+  opacity: 0.5;
+}
 .btn_arrow.up{
   left: 80;
   top: 50px;
