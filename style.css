@@ -27,6 +27,7 @@ width: 20% ;
 height: 500px;
 background-color: aquamarine;
 border: 1px solid black;
+position: relative;
 
 }
 .items_wrapper_right img{
@@ -37,10 +38,7 @@ border: 1px solid black;
 .box_img{
   border: 1px solid black;
   width: 100%;
-  
-  
   object-fit: cover;
-
 }
 .box_small{
   /* height: calc(100% / 5); */
@@ -52,4 +50,29 @@ border: 1px solid black;
   width: 100%;
   height: 100%;
   object-fit: cover; 
+}
+.btn_arrow{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .3s;
+  position: absolute;
+  left: 80%;
+  transform: translatex(-50%);
+  cursor: pointer;
+  
+}
+.btn_arrow.up{
+  left: 80;
+  top: 50px;
+}
+.btn_arrow.down{
+  bottom: 50px;
+}
+.btn_arrow:hover{
+  background-color: white;
+  color: black;
 }
